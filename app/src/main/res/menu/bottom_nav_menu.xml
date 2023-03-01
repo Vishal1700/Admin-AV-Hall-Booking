@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_av_hall"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_av_hall" />
+
+    <item
+        android:id="@+id/navigation_teacher"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_teacher" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_notifications" />
+
+    <item
+        android:id="@+id/navigation_timeslots"
+        android:icon="@drawable/baseline_access_time_24"
+        android:title="@string/title_time_slots" />
+
+</menu>
