@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Admin AV Hall Booking</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_av_hall">AV Hall</string>
+    <string name="title_teacher">Teachers</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_time_slots">Slots</string>
 </resources>

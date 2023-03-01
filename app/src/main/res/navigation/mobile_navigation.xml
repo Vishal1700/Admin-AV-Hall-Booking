@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_av_hall">
+
+    <fragment
+        android:id="@+id/navigation_av_hall"
+        android:name="com.example.adminavhallbooking.ui.AVHall.AVHallFragment"
+        android:label="@string/title_av_hall"
+        tools:layout="@layout/fragment_avhall" />
+
+    <fragment
+        android:id="@+id/navigation_teacher"
+        android:name="com.example.adminavhallbooking.ui.teachers.TeacherFragment"
+        android:label="@string/title_teacher"
+        tools:layout="@layout/fragment_teacher" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.adminavhallbooking.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_timeslots"
+        android:name="com.example.adminavhallbooking.ui.timeslots.TimeSlotFragment"
+        android:label="@string/title_time_slots"
+        tools:layout="@layout/fragment_time_slot" />
+</navigation>
