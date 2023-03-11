@@ -1,4 +1,4 @@
-package com.example.adminavhallbooking.UI.notifications;
+package com.example.adminavhallbooking.ui.timeslots;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -14,25 +14,25 @@ import android.view.ViewGroup;
 
 import com.example.adminavhallbooking.R;
 
-public class NotificationsFragment extends Fragment {
+public class TimeSlotFragment extends Fragment {
 
-    private NotificationsViewModel mViewModel;
+    private TimeSlotViewModel mViewModel;
 
-    public static NotificationsFragment newInstance() {
-        return new NotificationsFragment();
+    public static TimeSlotFragment newInstance() {
+        return new TimeSlotFragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_notifications2, container, false);
+        return inflater.inflate(R.layout.fragment_time_slot, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(NotificationsViewModel.class);
-
+        mViewModel = new ViewModelProvider(this).get(TimeSlotViewModel.class);
+        // TODO: Use the ViewModel
     }
 
 }

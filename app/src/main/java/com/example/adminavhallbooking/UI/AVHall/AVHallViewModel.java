@@ -1,4 +1,4 @@
-package com.example.adminavhallbooking.UI.AVHall;
+package com.example.adminavhallbooking.ui.AVHall;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

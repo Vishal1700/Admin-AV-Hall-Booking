@@ -1,7 +1,8 @@
-package com.example.adminavhallbooking;
+package com.example.adminavhallbooking.Activities;
 
 import android.os.Bundle;
 
+import com.example.adminavhallbooking.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;

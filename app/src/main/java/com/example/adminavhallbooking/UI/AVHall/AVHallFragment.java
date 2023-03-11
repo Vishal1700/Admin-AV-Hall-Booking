@@ -1,4 +1,4 @@
-package com.example.adminavhallbooking.UI.AVHall;
+package com.example.adminavhallbooking.ui.AVHall;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,6 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.adminavhallbooking.databinding.FragmentAvhallBinding;
 import com.example.adminavhallbooking.databinding.FragmentAvhallBinding;
-import com.example.adminavhallbooking.UI.AVHall.AVHallViewModel;
 
 public class AVHallFragment extends Fragment {
 
@@ -20,10 +19,15 @@ public class AVHallFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        AVHallViewModel avHallViewModel = new ViewModelProvider(this).get(AVHallViewModel.class);
+        AVHallViewModel AVHallViewModel =
+                new ViewModelProvider(this).get(AVHallViewModel.class);
 
         binding = FragmentAvhallBinding.inflate(inflater, container, false);
-        return binding.getRoot();
+        View root = binding.getRoot();
+
+        final TextView textView = binding.textHome;
+        AVHallViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        return root;
     }
 
     @Override
