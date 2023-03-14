@@ -1,4 +1,4 @@
-package com.example.adminavhallbooking.UI.notifications;
+package com.example.adminavhallbooking.ui.notifications;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -16,7 +16,7 @@ import com.example.adminavhallbooking.R;
 
 public class NotificationsFragment extends Fragment {
 
-    private NotificationsViewModel mViewModel;
+    com.example.adminavhallbooking.ui.notifications.NotificationsViewModel mViewModel;
 
     public static NotificationsFragment newInstance() {
         return new NotificationsFragment();
@@ -31,7 +31,7 @@ public class NotificationsFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(NotificationsViewModel.class);
+        mViewModel = new ViewModelProvider(this).get(com.example.adminavhallbooking.ui.notifications.NotificationsViewModel.class);
 
     }
 

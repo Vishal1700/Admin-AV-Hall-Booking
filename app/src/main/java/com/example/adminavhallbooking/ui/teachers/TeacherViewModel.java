@@ -1,4 +1,4 @@
-package com.example.adminavhallbooking.UI.teachers;
+package com.example.adminavhallbooking.ui.teachers;
 
 import android.provider.ContactsContract;
 import android.util.Log;
@@ -8,6 +8,7 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import com.example.adminavhallbooking.ui.teachers.Teacher;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -36,15 +37,12 @@ public class TeacherViewModel extends ViewModel {
         databaseRef.child("Teachers").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                ArrayList<Teacher> teachers = new ArrayList<>();
                 for(DataSnapshot dataSnapshot:snapshot.getChildren()){
-
                     Teacher teacher  = dataSnapshot.getValue(Teacher.class);
-                    if(teachersHashSet.contains(teacher.getUid())){
-                        continue;
-                    }
-                    teachersHashSet.add(teacher.getUid());
-                    teachersMutableArrayList.getValue().add(teacher);
+                    teachers.add(teacher);
                 }
+                teachersMutableArrayList.postValue(teachers);
             }
 
             @Override

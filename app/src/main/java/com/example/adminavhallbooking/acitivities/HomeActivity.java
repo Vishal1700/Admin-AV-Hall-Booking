@@ -1,4 +1,4 @@
-package com.example.adminavhallbooking.Activities;
+package com.example.adminavhallbooking.acitivities;
 
 import android.os.Bundle;
 

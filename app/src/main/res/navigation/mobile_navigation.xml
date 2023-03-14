@@ -7,44 +7,40 @@
 
     <fragment
         android:id="@+id/navigation_av_hall"
-        android:name="com.example.adminavhallbooking.UI.AVHall.AVHallFragment"
+        android:name="com.example.adminavhallbooking.ui.avhall.AVHallFragment"
         android:label="@string/title_av_hall"
-        tools:layout="@layout/fragment_avhall" >
-
-    </fragment>
+        tools:layout="@layout/fragment_avhall" />
 
     <fragment
         android:id="@+id/navigation_teacher"
-        android:name="com.example.adminavhallbooking.UI.teachers.TeacherFragment"
+        android:name="com.example.adminavhallbooking.ui.teachers.TeacherFragment"
         android:label="@string/title_teacher"
         tools:layout="@layout/fragment_teacher" >
-
         <action
             android:id="@+id/action_navigation_teacher_to_navigation_registerTeacher"
-            app:destination="@id/navigation_registerTeacher"
-            app:popUpToInclusive="true"/>
+            app:destination="@id/navigation_registerTeacher" />
     </fragment>
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.adminavhallbooking.UI.notifications.NotificationsFragment"
+        android:name="com.example.adminavhallbooking.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
 
     <fragment
         android:id="@+id/navigation_timeslots"
-        android:name="com.example.adminavhallbooking.UI.timeslots.TimeSlotFragment"
+        android:name="com.example.adminavhallbooking.ui.timeslots.TimeSlotFragment"
         android:label="@string/title_time_slots"
         tools:layout="@layout/fragment_time_slot" />
+
 
     <fragment
         android:id="@+id/navigation_registerTeacher"
         android:name="com.example.adminavhallbooking.ui.teachers.RegisterTeacherFragment"
         android:label="@string/register_teah"
-        tools:layout="@layout/fragment_register_teacher" >
+        tools:layout="@layout/fragment_time_slot" >
         <action
             android:id="@+id/action_navigation_registerTeacher_to_navigation_teacher"
-            app:destination="@id/navigation_teacher"
-            app:popUpTo="@id/navigation_teacher"/>
+            app:destination="@id/navigation_teacher" />
     </fragment>
 </navigation>

@@ -1,4 +1,4 @@
-package com.example.adminavhallbooking.UI.timeslots;
+package com.example.adminavhallbooking.ui.timeslots;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -17,7 +17,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class TimeSlotFragment extends Fragment {
 
-    private TimeSlotViewModel mViewModel;
+    private com.example.adminavhallbooking.ui.timeslots.TimeSlotViewModel mViewModel;
 
     public static TimeSlotFragment newInstance() {
         return new TimeSlotFragment();
@@ -39,7 +39,7 @@ public class TimeSlotFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(TimeSlotViewModel.class);
+        mViewModel = new ViewModelProvider(this).get(com.example.adminavhallbooking.ui.timeslots.TimeSlotViewModel.class);
         // TODO: Use the ViewModel
     }
 

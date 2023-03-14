@@ -1,13 +1,9 @@
-package com.example.adminavhallbooking.UI.teachers;
+package com.example.adminavhallbooking.ui.teachers;
 
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,10 +19,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.adminavhallbooking.R;
 import com.example.adminavhallbooking.databinding.FragmentTeacherBinding;
 
+import com.example.adminavhallbooking.ui.teachers.TeacherRecyclerAdpater;
+
 import java.util.ArrayList;
 
 public class TeacherFragment extends Fragment {
-    TeacherViewModel teacherViewModel;
+    com.example.adminavhallbooking.ui.teachers.TeacherViewModel teacherViewModel;
     private FragmentTeacherBinding binding;
 
     NavController navController;
@@ -35,8 +33,7 @@ public class TeacherFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        teacherViewModel = new ViewModelProvider(this).get(TeacherViewModel.class);
-        teacherRecyclerAdpater = new TeacherRecyclerAdpater(new ArrayList<>());
+
 
 
     }
@@ -45,10 +42,12 @@ public class TeacherFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
+        teacherViewModel = new ViewModelProvider(this).get(com.example.adminavhallbooking.ui.teachers.TeacherViewModel.class);
+        teacherRecyclerAdpater = new TeacherRecyclerAdpater();
         binding.addteacherbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NavDirections action = TeacherFragmentDirections.actionNavigationTeacherToNavigationRegisterTeacher();
+                NavDirections action = com.example.adminavhallbooking.ui.teachers.TeacherFragmentDirections.actionNavigationTeacherToNavigationRegisterTeacher();
                navController.navigate(action);
             }
         });
@@ -59,9 +58,7 @@ public class TeacherFragment extends Fragment {
         teacherViewModel.getList().observe(getViewLifecycleOwner(), new Observer<ArrayList<Teacher>>() {
             @Override
             public void onChanged(ArrayList<Teacher> teachers) {
-                teacherRecyclerAdpater.teachersList = teachers;
                 teacherRecyclerAdpater.notify(teachers);
-
             }
         });
     }

@@ -1,4 +1,4 @@
-package com.example.adminavhallbooking.UI.teachers;
+package com.example.adminavhallbooking.ui.teachers;
 
 import android.os.Bundle;
 
@@ -12,8 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.example.adminavhallbooking.R;
 import com.example.adminavhallbooking.databinding.FragmentRegisterTeacherBinding;
+import com.example.adminavhallbooking.repositories.RegisterTeacherFramentRepository;
 
 public class RegisterTeacherFragment extends Fragment implements RegisterTeacherFramentRepository.RegisterCallBack  {
 

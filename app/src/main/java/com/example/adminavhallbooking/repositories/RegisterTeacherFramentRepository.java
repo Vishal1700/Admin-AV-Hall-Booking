@@ -1,5 +1,7 @@
-package com.example.adminavhallbooking.ui.teachers;
+package com.example.adminavhallbooking.repositories;
 
+import com.example.adminavhallbooking.ui.teachers.SendMail;
+import com.example.adminavhallbooking.ui.teachers.Teacher;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -7,7 +9,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 
 public class RegisterTeacherFramentRepository {
-    interface RegisterCallBack{
+    public interface RegisterCallBack{
         public void onRegisterComplete();
     }
     DatabaseReference dbRef;

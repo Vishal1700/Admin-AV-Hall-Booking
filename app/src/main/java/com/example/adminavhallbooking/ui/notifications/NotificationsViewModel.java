@@ -1,4 +1,4 @@
-package com.example.adminavhallbooking.UI.notifications;
+package com.example.adminavhallbooking.ui.notifications;
 
 import androidx.lifecycle.ViewModel;
 

@@ -1,4 +1,4 @@
-package com.example.adminavhallbooking.UI.AVHall;
+package com.example.adminavhallbooking.ui.avhall;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -8,34 +8,29 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.adminavhallbooking.Adapters.AVHallAdapter;
-import com.example.adminavhallbooking.Models.AVHalls;
+import com.example.adminavhallbooking.adapters.AVHallAdapter;
+import com.example.adminavhallbooking.models.AVHalls;
 import com.example.adminavhallbooking.R;
 import com.example.adminavhallbooking.databinding.FragmentAvhallBinding;
-import com.example.adminavhallbooking.databinding.FragmentAvhallBinding;
-import com.example.adminavhallbooking.UI.AVHall.AVHallViewModel;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class AVHallFragment extends Fragment {
 
     private FragmentAvhallBinding binding;
-    private AVHallViewModel avHallViewModel;
+    private com.example.adminavhallbooking.ui.avhall.AVHallViewModel avHallViewModel;
     private AVHallAdapter avHallAdapter;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        AVHallViewModel avHallViewModel = new ViewModelProvider(this).get(AVHallViewModel.class);
+        com.example.adminavhallbooking.ui.avhall.AVHallViewModel avHallViewModel = new ViewModelProvider(this).get(com.example.adminavhallbooking.ui.avhall.AVHallViewModel.class);
 
         binding = FragmentAvhallBinding.inflate(inflater, container, false);
         return binding.getRoot();
@@ -46,7 +41,7 @@ public class AVHallFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         Dialog dialog = new Dialog(getContext());
-        avHallViewModel = new ViewModelProvider(this).get(AVHallViewModel.class);
+        avHallViewModel = new ViewModelProvider(this).get(com.example.adminavhallbooking.ui.avhall.AVHallViewModel.class);
 
         avHallAdapter = new AVHallAdapter();
         binding.recyclerView.setAdapter(avHallAdapter);

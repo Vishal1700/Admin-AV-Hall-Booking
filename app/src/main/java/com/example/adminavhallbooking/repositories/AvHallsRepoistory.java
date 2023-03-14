@@ -1,4 +1,4 @@
-package com.example.adminavhallbooking.Repositories;
+package com.example.adminavhallbooking.repositories;
 
 import android.util.Log;
 
@@ -6,8 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.adminavhallbooking.Models.AVHalls;
-import com.google.android.gms.tasks.OnSuccessListener;
+import com.example.adminavhallbooking.models.AVHalls;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

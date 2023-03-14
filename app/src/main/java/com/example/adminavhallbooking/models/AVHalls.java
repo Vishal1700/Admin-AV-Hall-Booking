@@ -1,4 +1,4 @@
-package com.example.adminavhallbooking.Models;
+package com.example.adminavhallbooking.models;
 
 public class AVHalls {
     private String name;

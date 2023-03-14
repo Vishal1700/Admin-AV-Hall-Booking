@@ -1,4 +1,4 @@
-package com.example.adminavhallbooking.Adapters;
+package com.example.adminavhallbooking.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,11 +8,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.adminavhallbooking.Models.AVHalls;
+import com.example.adminavhallbooking.models.AVHalls;
 import com.example.adminavhallbooking.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class AVHallAdapter extends RecyclerView.Adapter<AVHallAdapter.AVHallHolder> {
 

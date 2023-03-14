@@ -17,9 +17,7 @@ import java.util.Objects;
 public class TeacherRecyclerAdpater extends RecyclerView.Adapter<TeacherRecyclerAdpater.ViewHolder> {
 
     ArrayList<Teacher>  teachersList;
-    public TeacherRecyclerAdpater(ArrayList<Teacher> arrayList){
-        this.teachersList = arrayList;
-
+    public TeacherRecyclerAdpater() {
 
     }
 
@@ -30,6 +28,7 @@ public class TeacherRecyclerAdpater extends RecyclerView.Adapter<TeacherRecycler
                 .inflate(R.layout.displaypersonrecyclerview, parent, false);
         return new ViewHolder(view);
     }
+
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
@@ -44,6 +43,7 @@ public class TeacherRecyclerAdpater extends RecyclerView.Adapter<TeacherRecycler
     }
 
     public void notify(ArrayList<Teacher> teachers) {
+        teachersList = teachers;
         notifyDataSetChanged();
     }
 
