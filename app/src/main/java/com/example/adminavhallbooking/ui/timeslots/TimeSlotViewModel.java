@@ -1,4 +1,4 @@
-package com.example.adminavhallbooking.UI.timeslots;
+package com.example.adminavhallbooking.ui.timeslots;
 
 import androidx.lifecycle.ViewModel;
 
