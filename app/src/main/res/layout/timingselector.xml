@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/yeartext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/select_year"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            app:layout_constraintTop_toBottomOf="@id/yeartext">
+            <RadioButton android:id="@+id/radiofirst"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_year"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radioother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/other_year"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/simpletextavhalltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/enter_timing_for_av_hall_availability"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radiogroup" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/starttimeselectbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Select Start Time"
+            app:layout_constraintStart_toStartOf="@+id/simpletextavhalltime"
+            app:layout_constraintTop_toBottomOf="@+id/simpletextavhalltime" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/endtimeselectbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select End Time"
+            app:layout_constraintBottom_toBottomOf="@+id/starttimeselectbutton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/starttimeselectbutton"
+            app:layout_constraintTop_toTopOf="@+id/starttimeselectbutton"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

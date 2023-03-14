@@ -9,13 +9,21 @@
         android:id="@+id/navigation_av_hall"
         android:name="com.example.adminavhallbooking.ui.AVHall.AVHallFragment"
         android:label="@string/title_av_hall"
-        tools:layout="@layout/fragment_avhall" />
+        tools:layout="@layout/fragment_avhall" >
+
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_teacher"
         android:name="com.example.adminavhallbooking.ui.teachers.TeacherFragment"
         android:label="@string/title_teacher"
-        tools:layout="@layout/fragment_teacher" />
+        tools:layout="@layout/fragment_teacher" >
+
+        <action
+            android:id="@+id/action_navigation_teacher_to_navigation_registerTeacher"
+            app:destination="@id/navigation_registerTeacher"
+            app:popUpToInclusive="true"/>
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_notifications"
@@ -28,4 +36,15 @@
         android:name="com.example.adminavhallbooking.ui.timeslots.TimeSlotFragment"
         android:label="@string/title_time_slots"
         tools:layout="@layout/fragment_time_slot" />
+
+    <fragment
+        android:id="@+id/navigation_registerTeacher"
+        android:name="com.example.adminavhallbooking.ui.teachers.RegisterTeacherFragment"
+        android:label="@string/register_teah"
+        tools:layout="@layout/fragment_register_teacher" >
+        <action
+            android:id="@+id/action_navigation_registerTeacher_to_navigation_teacher"
+            app:destination="@id/navigation_teacher"
+            app:popUpTo="@id/navigation_teacher"/>
+    </fragment>
 </navigation>

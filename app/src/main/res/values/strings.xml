@@ -14,7 +14,17 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="register_teacher">Register Teacher</string>
+    <string name="register_and_send_credential">Register and Send Credential</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="enter_gmail">Enter Gmail</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="first_year">First Year</string>
+    <string name="other_year">Other Year</string>
+    <string name="select_year">Select Year</string>
+    <string name="enter_timing_for_av_hall_availability">Enter Timing For AV Hall Availability</string>
+    <string name="register_teah">Register Teacher</string>
 </resources>
