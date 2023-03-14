@@ -1,16 +1,16 @@
-package com.example.adminavhallbooking.UI.teachers;
+package com.example.adminavhallbooking.ui.AVHall;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class TeacherViewModel extends ViewModel {
+public class AVHallViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public TeacherViewModel() {
+    public AVHallViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
+        mText.setValue("This is home fragment");
     }
 
     public LiveData<String> getText() {

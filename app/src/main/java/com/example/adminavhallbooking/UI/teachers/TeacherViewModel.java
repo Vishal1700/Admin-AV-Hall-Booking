@@ -1,4 +1,4 @@
-package com.example.adminavhallbooking.UI.teachers;
+package com.example.adminavhallbooking.ui.teachers;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

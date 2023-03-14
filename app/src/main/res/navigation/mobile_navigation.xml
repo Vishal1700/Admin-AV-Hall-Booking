@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/navigation_av_hall"
-        android:name="com.example.adminavhallbooking.ui.AVHall.AVHallFragment"
+        android:name="com.example.adminavhallbooking.UI.AVHall.AVHallFragment"
         android:label="@string/title_av_hall"
         tools:layout="@layout/fragment_avhall" />
 
     <fragment
         android:id="@+id/navigation_teacher"
-        android:name="com.example.adminavhallbooking.ui.teachers.TeacherFragment"
+        android:name="com.example.adminavhallbooking.UI.teachers.TeacherFragment"
         android:label="@string/title_teacher"
         tools:layout="@layout/fragment_teacher" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.adminavhallbooking.ui.notifications.NotificationsFragment"
+        android:name="com.example.adminavhallbooking.UI.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
 
     <fragment
         android:id="@+id/navigation_timeslots"
-        android:name="com.example.adminavhallbooking.ui.timeslots.TimeSlotFragment"
+        android:name="com.example.adminavhallbooking.UI.timeslots.TimeSlotFragment"
         android:label="@string/title_time_slots"
         tools:layout="@layout/fragment_time_slot" />
 </navigation>
