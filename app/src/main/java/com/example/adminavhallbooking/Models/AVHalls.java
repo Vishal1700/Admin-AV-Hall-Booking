@@ -1,7 +1,6 @@
 package com.example.adminavhallbooking.Models;
 
 public class AVHalls {
-    private int id;
     private String name;
     private String location;
     private int capacity;
@@ -9,14 +8,6 @@ public class AVHalls {
 
     public AVHalls() {
 
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
