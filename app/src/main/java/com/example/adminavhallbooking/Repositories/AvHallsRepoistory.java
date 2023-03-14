@@ -33,9 +33,7 @@ public class AvHallsRepoistory {
     public void AddAvHall(AVHalls avHalls) {
         String key = db.child("AVHalls").push().getKey();
         assert key != null;
-        db.child("AVHalls").child(key).setValue(avHalls).addOnSuccessListener(unused -> {
-
-        });
+        db.child("AVHalls").child(key).setValue(avHalls);
     }
 
     public LiveData<List<AVHalls>> getAvHalls() {

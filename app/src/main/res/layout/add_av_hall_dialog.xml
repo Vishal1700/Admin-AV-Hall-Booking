@@ -3,38 +3,54 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/border"
     android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/CancelBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/cross"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/hall_name_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ubunturegular"
         android:hint="Enter Hall Name"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/CancelBtn" />
 
     <EditText
         android:id="@+id/hall_location_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/ubunturegular"
         android:hint="Enter Hall Location"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hall_name_et" />
 
     <EditText
         android:id="@+id/hall_capacity_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/ubunturegular"
         android:hint="Capacity"
+        android:inputType="number"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hall_location_et" />
 
     <EditText
@@ -42,8 +58,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Dept."
+        android:fontFamily="@font/ubunturegular"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintTop_toBottomOf="@+id/hall_capacity_et" />
 
     <Button
@@ -51,6 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginStart="161dp"
+        android:fontFamily="@font/ubuntubold"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="162dp"
         android:text="Done"

@@ -22,7 +22,7 @@ public class AVHallAdapter extends RecyclerView.Adapter<AVHallAdapter.AVHallHold
     @Override
     public AVHallHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemview = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.fragment_avhall, parent, false);
+                .inflate(R.layout.hall_list_rv, parent, false);
         return new AVHallHolder(itemview);
     }
 
@@ -31,7 +31,7 @@ public class AVHallAdapter extends RecyclerView.Adapter<AVHallAdapter.AVHallHold
         AVHalls curr_av = HallList.get(position);
         holder.name.setText(curr_av.getName());
         holder.location.setText(curr_av.getLocation());
-        holder.capacity.setText(curr_av.getCapacity());
+        holder.capacity.setText(String.valueOf(curr_av.getCapacity()));
         holder.dept.setText(curr_av.getDept());
     }
 
@@ -45,7 +45,7 @@ public class AVHallAdapter extends RecyclerView.Adapter<AVHallAdapter.AVHallHold
         notifyDataSetChanged();
     }
 
-    class AVHallHolder extends RecyclerView.ViewHolder{
+    public class AVHallHolder extends RecyclerView.ViewHolder{
         private TextView name;
         private TextView location;
         private TextView capacity;
@@ -53,10 +53,11 @@ public class AVHallAdapter extends RecyclerView.Adapter<AVHallAdapter.AVHallHold
 
         public AVHallHolder(@NonNull View itemView) {
             super(itemView);
-            name = itemView.findViewById(R.id.hall_name_et);
-            location = itemView.findViewById(R.id.hall_location_et);
-            capacity = itemView.findViewById(R.id.hall_capacity_et);
-            dept = itemView.findViewById(R.id.hall_dept_et);
+
+            name = itemView.findViewById(R.id.NameTV);
+            location = itemView.findViewById(R.id.LocationTV);
+            capacity = itemView.findViewById(R.id.CapacityTV);
+            dept = itemView.findViewById(R.id.DeptTV);
         }
     }
 }
