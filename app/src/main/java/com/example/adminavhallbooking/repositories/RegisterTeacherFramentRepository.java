@@ -1,8 +1,12 @@
 package com.example.adminavhallbooking.repositories;
 
+import android.widget.Toast;
+
 import com.example.adminavhallbooking.ui.teachers.SendMail;
 import com.example.adminavhallbooking.ui.teachers.Teacher;
+import com.google.android.gms.tasks.OnCanceledListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -37,13 +41,19 @@ public class RegisterTeacherFramentRepository {
                 registerCallBack.onRegisterComplete();
                 SendMail sendMail = new SendMail();
                 sendMail.sendmailToGmail(teacher.getGmail());
+                registerUserToFirebaseAuth();
             }
         });
         
         
     }
 
-    private void sendCredentailToGmail() {
+    private void registerUserToFirebaseAuth() {
+            FirebaseAuth.getInstance().createUserWithEmailAndPassword(teacher.getGmail(),"abcdefghi").addOnCanceledListener(new OnCanceledListener() {
+                @Override
+                public void onCanceled() {
 
+                }
+            });
     }
 }

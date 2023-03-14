@@ -8,8 +8,66 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.timeslots.TimeSlotFragment">
+        tools:context=".ui.timeslots.TimeSlotFragment"
+        >
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/firstyearbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First year Timings"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/otheryearbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Other year Timings"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstyeartimingtextview" />
+
+        <TextView
+            android:id="@+id/firstyeartimingtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200"
+            android:padding="10dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="From 8:30 to 4:10 \nwith break \n 11:35 to 12:10 "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/firstyearbutton"
+            app:layout_constraintStart_toStartOf="@+id/firstyearbutton"
+            app:layout_constraintTop_toBottomOf="@+id/firstyearbutton" />
+
+        <TextView
+            android:id="@+id/otheryeartextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200"
+            android:padding="10dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="From 8:30 to 4:10 \nwith break \n 11:35 to 12:10 "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/otheryearbutton"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/otheryearbutton"
+            app:layout_constraintTop_toBottomOf="@+id/otheryearbutton" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/addtimebutton"

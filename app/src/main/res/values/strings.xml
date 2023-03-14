@@ -27,4 +27,5 @@
     <string name="select_year">Select Year</string>
     <string name="enter_timing_for_av_hall_availability">Enter Timing For AV Hall Availability</string>
     <string name="register_teah">Register Teacher</string>
+    <string name="done">DONE</string>
 </resources>

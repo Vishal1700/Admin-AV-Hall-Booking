@@ -32,9 +32,8 @@ public class TeacherFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-
+        teacherViewModel = new ViewModelProvider(this).get(com.example.adminavhallbooking.ui.teachers.TeacherViewModel.class);
+        teacherRecyclerAdpater = new TeacherRecyclerAdpater();
 
     }
 
@@ -42,8 +41,6 @@ public class TeacherFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
-        teacherViewModel = new ViewModelProvider(this).get(com.example.adminavhallbooking.ui.teachers.TeacherViewModel.class);
-        teacherRecyclerAdpater = new TeacherRecyclerAdpater();
         binding.addteacherbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
