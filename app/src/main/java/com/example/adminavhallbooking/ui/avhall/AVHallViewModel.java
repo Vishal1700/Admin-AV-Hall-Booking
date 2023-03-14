@@ -1,11 +1,11 @@
-package com.example.adminavhallbooking.UI.AVHall;
+package com.example.adminavhallbooking.ui.avhall;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.adminavhallbooking.Models.AVHalls;
-import com.example.adminavhallbooking.Repositories.AvHallsRepoistory;
+import com.example.adminavhallbooking.models.AVHalls;
+import com.example.adminavhallbooking.repositories.AvHallsRepoistory;
 
 import java.util.List;
 
