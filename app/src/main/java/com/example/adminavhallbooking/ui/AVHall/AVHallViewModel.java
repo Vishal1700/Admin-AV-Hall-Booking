@@ -1,19 +1,31 @@
-package com.example.adminavhallbooking.ui.AVHall;
+package com.example.adminavhallbooking.UI.AVHall;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import com.example.adminavhallbooking.Models.AVHalls;
+import com.example.adminavhallbooking.Repositories.AvHallsRepoistory;
+
+import java.util.List;
+
 public class AVHallViewModel extends ViewModel {
 
-    private final MutableLiveData<String> mText;
+    private AvHallsRepoistory avHallsRepoistory;
+    private MutableLiveData<List<AVHalls>> hallList = new MutableLiveData<>();
 
     public AVHallViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        avHallsRepoistory = new AvHallsRepoistory();
+        getAvHalls();
+    }
+    public void addHall(AVHalls avHall) {
+        avHallsRepoistory.AddAvHall(avHall);
     }
 
-    public LiveData<String> getText() {
-        return mText;
+    public LiveData<List<AVHalls>> getAvHalls() {
+        if(hallList.getValue()==null) {
+            hallList = (MutableLiveData<List<AVHalls>>) avHallsRepoistory.getAvHalls();
+        }
+        return hallList;
     }
 }
