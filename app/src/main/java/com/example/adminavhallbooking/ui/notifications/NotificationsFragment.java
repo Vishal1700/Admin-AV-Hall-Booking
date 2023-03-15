@@ -28,11 +28,6 @@ public class NotificationsFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_notifications2, container, false);
     }
 
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(com.example.adminavhallbooking.ui.notifications.NotificationsViewModel.class);
 
-    }
 
 }
