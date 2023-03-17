@@ -61,7 +61,7 @@ public class TimeSlotFragment extends Fragment {
                 if(timeSlot.startTime == null)
                         return;
 
-                String time = timeSlot.getEndTime();
+                String time = timeSlot.getLunchTime();
                 SimpleDateFormat df = new SimpleDateFormat("HH:mm");
                 Date d = null;
                 try {

@@ -6,6 +6,16 @@ public class AVHalls {
     private int capacity;
     private String dept;
 
+    public String getAvHallUid() {
+        return avHallUid;
+    }
+
+    public void setAvHallUid(String avHallUid) {
+        this.avHallUid = avHallUid;
+    }
+
+    private String avHallUid;
+
     public AVHalls() {
 
     }

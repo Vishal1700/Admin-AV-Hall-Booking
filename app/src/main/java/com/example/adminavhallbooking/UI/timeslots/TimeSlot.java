@@ -1,7 +1,7 @@
 package com.example.adminavhallbooking.ui.timeslots;
 
 public class TimeSlot {
-    String startTime,endTime,lunchTime;
+    String startTime,endTime,lunchTime,endlunchTime;
 
     public String getStartTime() {
         return startTime;

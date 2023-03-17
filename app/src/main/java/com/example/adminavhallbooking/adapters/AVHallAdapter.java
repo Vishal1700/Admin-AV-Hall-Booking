@@ -50,6 +50,8 @@ public class AVHallAdapter extends RecyclerView.Adapter<AVHallAdapter.AVHallHold
         private TextView capacity;
         private TextView dept;
 
+
+
         public AVHallHolder(@NonNull View itemView) {
             super(itemView);
 
