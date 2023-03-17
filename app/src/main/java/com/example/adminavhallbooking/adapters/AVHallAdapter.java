@@ -28,10 +28,10 @@ public class AVHallAdapter extends RecyclerView.Adapter<AVHallAdapter.AVHallHold
     @Override
     public void onBindViewHolder(@NonNull AVHallHolder holder, int position) {
         AVHalls curr_av = HallList.get(position);
-        holder.name.setText(curr_av.getName());
-        holder.location.setText(curr_av.getLocation());
-        holder.capacity.setText(String.valueOf(curr_av.getCapacity()));
-        holder.dept.setText(curr_av.getDept());
+        holder.name.setText( curr_av.getName());
+        holder.location.setText("Location: " + curr_av.getLocation());
+        holder.capacity.setText("Capacity: " + String.valueOf(curr_av.getCapacity()));
+        holder.dept.setText("Dept. " + curr_av.getDept());
     }
 
     @Override
@@ -49,6 +49,8 @@ public class AVHallAdapter extends RecyclerView.Adapter<AVHallAdapter.AVHallHold
         private TextView location;
         private TextView capacity;
         private TextView dept;
+
+
 
         public AVHallHolder(@NonNull View itemView) {
             super(itemView);

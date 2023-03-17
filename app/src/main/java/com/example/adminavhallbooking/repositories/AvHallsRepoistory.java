@@ -32,6 +32,7 @@ public class AvHallsRepoistory {
     public void AddAvHall(AVHalls avHalls) {
         String key = db.child("AVHalls").push().getKey();
         assert key != null;
+        avHalls.setAvHallUid(key);
         db.child("AVHalls").child(key).setValue(avHalls);
     }
 

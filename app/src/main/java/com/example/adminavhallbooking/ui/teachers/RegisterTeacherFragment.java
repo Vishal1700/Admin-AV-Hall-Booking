@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,9 @@ import android.widget.Toast;
 
 import com.example.adminavhallbooking.databinding.FragmentRegisterTeacherBinding;
 import com.example.adminavhallbooking.repositories.RegisterTeacherFramentRepository;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class RegisterTeacherFragment extends Fragment implements RegisterTeacherFramentRepository.RegisterCallBack  {
 
@@ -30,14 +34,18 @@ public class RegisterTeacherFragment extends Fragment implements RegisterTeacher
         lastName = binding.lastnameeditext.getText().toString();
         gmail = binding.gmailedittext.getText().toString();
         phoneNumber = binding.phonenumberedittext.getText().toString();
+        Pattern pattern = Pattern.compile("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
 
+        Matcher m = pattern.matcher(gmail);
         Log.i("firstName",firstName);
         if(firstName.isEmpty()){
             binding.firstnameerrorfield.setError("First Name Cannot be Empty");
         }else if(lastName.isEmpty()){
             binding.lastnamerrorfield.setError("Last Name cannot be Empty");
         }else if (gmail.isEmpty()){
-            binding.gmailerrorfield.setError("Email caanot be Empty");
+            binding.gmailerrorfield.setError("Email cannot be Empty");
+        }else if(!m.matches()){
+            binding.gmailerrorfield.setError("Invalid Email Address");
         }else if(phoneNumber.isEmpty()){
             binding.phonenumbererrorfield.setError("Phone Number cannot be Empty");
         }else if(phoneNumber.length()<10){
