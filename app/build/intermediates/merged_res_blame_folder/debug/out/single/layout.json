@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-mergeDebugResources-54:\\layout\\fragment_notifications.xml",
+        "source": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-main-57:\\layout\\fragment_notifications.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-mergeDebugResources-54:\\layout\\displaypersonrecyclerview.xml",
+        "source": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-main-57:\\layout\\displaypersonrecyclerview.xml"
+    },
+    {
+        "merged": "com.example.adminavhallbooking.app-mergeDebugResources-54:/layout/fragment_time_slot.xml",
+        "source": "com.example.adminavhallbooking.app-main-57:/layout/fragment_time_slot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-mergeDebugResources-54:\\layout\\fragment_notifications2.xml",
+        "source": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-main-57:\\layout\\fragment_notifications2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-mergeDebugResources-54:\\layout\\hall_list_rv.xml",
+        "source": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-main-57:\\layout\\hall_list_rv.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-mergeDebugResources-54:\\layout\\timingselector.xml",
+        "source": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-main-57:\\layout\\timingselector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-mergeDebugResources-54:\\layout\\add_av_hall_dialog.xml",
+        "source": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-main-57:\\layout\\add_av_hall_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-mergeDebugResources-54:\\layout\\selectimelayout.xml",
+        "source": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-main-57:\\layout\\selectimelayout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-mergeDebugResources-54:\\layout\\fragment_avhall.xml",
+        "source": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-main-57:\\layout\\fragment_avhall.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-mergeDebugResources-54:\\layout\\activity_home.xml",
+        "source": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-main-57:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-mergeDebugResources-54:\\layout\\fragment_register_teacher.xml",
+        "source": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-main-57:\\layout\\fragment_register_teacher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-mergeDebugResources-54:\\layout\\fragment_teacher.xml",
+        "source": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-main-57:\\layout\\fragment_teacher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-mergeDebugResources-54:\\layout\\fragment_time_slot.xml",
+        "source": "C:\\Users\\Vishal\\.gradle\\daemon\\7.5\\com.example.adminavhallbooking.app-main-57:\\layout\\fragment_time_slot.xml"
+    }
+]
